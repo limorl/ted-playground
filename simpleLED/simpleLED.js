@@ -21,9 +21,9 @@ var requestUrl = serviceUrl + "?id=" + myBeaconId;
   }
   
   var query = setInterval(function(){
-    request(serviceUrl, function(error, response, body)){
+    request(serviceUrl, function(error, response, body){
       console.log(body);
       if(body == 0) turnOff();
-      else if (vody == 1) turnOn();
-    }
-  })
+      else if (body == 1) turnOn();
+    });
+  });
