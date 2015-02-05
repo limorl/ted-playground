@@ -21,7 +21,7 @@ var requestUrl = serviceUrl + "?id=" + myBeaconId;
   }
   
   var query = setInterval(function(){
-    request(serviceUrl, function(error, response, body){
+    request(requestUrl, function(error, response, body){
       console.log(body);
       if(body == 0) turnOff();
       else if (body == 1) turnOn();
