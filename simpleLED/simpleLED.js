@@ -1,7 +1,7 @@
 var request = require('request'),
     requestInterval = 500,
-    requestUrl = "http://beaconmeetup.azurewebsites.net/beacon.aspx",
-    Gpio = require('onoff'),
+    serviceUrl = "http://beaconmeetup.azurewebsites.net/beacon.aspx",
+    Gpio = require('onoff').Gpio,
     led = new Gpio(17, 'out');
     
 var beaconId1 = "n7b6-62cs1" ;
